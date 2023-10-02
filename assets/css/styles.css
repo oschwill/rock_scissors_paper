@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+}
+
+i {
+  font-size: 4rem;
+}
+
+h1,
+p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 25px auto;
+  row-gap: 20px;
+}
+
+.rounds {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.rounds .rounds-select {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.rounds .rounds-select:first-of-type {
+  margin-top: 10px;
+}
+
+.rounds .rounds-select div {
+  width: 100%;
+}
+
+.result {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid white;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.player .flag,
+.cpu .flag {
+  font-size: 1.25rem;
+  background-color: rgb(205, 52, 52);
+  padding: 10px;
+  text-align: center;
+  animation: animate-flag 1s linear infinite;
+}
+.result .player .player-turn,
+.result .cpu .cpu-turn {
+  height: 60px;
+  width: 60px;
+  border: 2px solid white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.game-elements {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.game-elements button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.game-elements i {
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.restart {
+  padding: 5px 15px;
+  background-color: orange;
+  color: white;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.restart:hover {
+  background-color: rgb(209, 166, 87);
+}
+
+@keyframes animate-flag {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

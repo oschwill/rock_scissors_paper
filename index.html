@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Rock Scissors Paper</title>
+</head>
+
+<body>
+  <main>
+    <div class="rounds">
+      <h1>How many rounds?</h1>
+      <div class="rounds-select">
+        <div>
+          <input type="radio" name="rounds" value="5" id="five" checked>
+          <label for="five">5</label>
+        </div>
+        <div>
+          <input type="radio" name="rounds" value="10" id="ten">
+          <label for="ten">10</label>
+        </div>
+      </div>
+      <div class="rounds-select">
+        <div>
+          <input type="radio" name="rounds" value="15" id="fifteen">
+          <label for="fifteen">15</label>
+        </div>
+        <div>
+          <input type="radio" name="rounds" value="20" id="twenty">
+          <label for="twenty">20</label>
+        </div>
+      </div>
+    </div>
+    <div class="result">
+      <div class="player">
+        <div class="flag">
+          YOU
+        </div>
+        <div class="player-turn">
+
+          <i class="fa-solid fa-hand-fist" style="color: #fff400;"></i>
+        </div>
+      </div>
+      <div class="interium-result">
+        <p>0 : 0</p>
+      </div>
+      <div class="cpu">
+        <div class="flag">
+          CPU
+        </div>
+        <div class="cpu-turn">
+          <i class="fa-solid fa-hand-fist" style="color: #fff400;"></i>
+        </div>
+      </div>
+    </div>
+    <h2 class="game-message">Lets Play</h2>
+    <div class="game-elements">
+      <button value="rock">
+        <i class="fa-solid fa-hand-fist" style="color: #fff400;"></i>
+      </button>
+      <button value="paper">
+        <i class="fa-solid fa-hand" style="color: #fff400;"></i>
+      </button>
+      <button value="scissor">
+        <i class="fa-solid fa-hand-scissors fa-rotate-90" style="color: #fff400;"></i>
+      </button>
+    </div>
+    <p class="request-text">MAKE YOUR MOVE.</p>
+    <button class="restart">Restart</button>
+  </main>
+</body>
+
+</html>
