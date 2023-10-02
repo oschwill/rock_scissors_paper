@@ -80,7 +80,7 @@ const showChoiceElements = (playerInput, cpuInput) => {
 
 const showRounds = () => {
   roundsOutput.querySelectorAll('.rounds-select').forEach((dom) => dom?.remove()); // check if exists
-  roundsOutput.innerHTML = `<h1>How many rounds?</h1>${actualRound} / ${maxRounds}`;
+  roundsOutput.innerHTML = `<h1>How many rounds?</h1>Round: ${actualRound} / ${maxRounds}`;
   roundsOutput.style.alignItems = 'center';
 };
 
