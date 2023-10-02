@@ -46,6 +46,10 @@ main {
   margin-bottom: 20px;
 }
 
+.rounds h1 {
+  margin-bottom: 10px;
+}
+
 .rounds .rounds-select {
   display: flex;
   justify-content: space-around;
@@ -93,13 +97,8 @@ main {
   margin-bottom: 5px;
 }
 
-.game-elements button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .game-elements i {
+  cursor: pointer;
   border: 2px solid white;
   padding: 20px;
   border-radius: 50%;
@@ -119,6 +118,12 @@ main {
   background-color: rgb(209, 166, 87);
 }
 
+.pointer {
+  transform: rotate(-180deg);
+  animation: animate-pointer 0.5s linear infinite;
+  border: none !important;
+}
+
 @keyframes animate-flag {
   0%,
   100% {
@@ -126,5 +131,15 @@ main {
   }
   50% {
     transform: scale(1.2);
+  }
+}
+
+@keyframes animate-pointer {
+  0%,
+  100% {
+    transform: rotate(180deg) translateY(0);
+  }
+  50% {
+    transform: rotate(180deg) translateY(10px);
   }
 }
