@@ -94,13 +94,14 @@ const generateResult = (matchOutput, playerVal, cpuVal) => {
 
   matchOutput === true ? playerScore++ : cpuScore++;
 
+  // set result
+  resultOutput.innerHTML = `<p>${playerScore} : ${cpuScore}</p>`;
+
   // check if max round
   if (actualRound === maxRounds) {
     matchEnd();
     return;
   }
-
-  resultOutput.innerHTML = `<p>${playerScore} : ${cpuScore}</p>`;
 };
 
 const matchEnd = () => {
